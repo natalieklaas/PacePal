@@ -31,6 +31,14 @@ h1, h2 {
     padding: 0px;
     font-size: 20px;
   }
+
+  h6{
+    text-align: center; 
+    color: #000000;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: normal;
+  }
   
   /* Style form elements for input fields and labels */
 /* Align form elements using flexbox */

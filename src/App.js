@@ -105,6 +105,7 @@ function SwimPaceCalculator() {
   // Function to calculate swim pace
   const calculatePace = () => {
     // Convert goal time to seconds
+
     const goalTimeInSeconds = convertGoalTimeToSeconds(goalTime);
 
 
@@ -212,7 +213,9 @@ function SwimPaceCalculator() {
  const convertGoalTimeToSeconds = (timeString) => {
   //const [minutes, seconds, hundredths] = timeString.split(':' || '.').map(Number);
   const [minutes, seconds, hundredths] = timeString.split(/:|\./).map(Number);
+  
   return  minutes * 60 + seconds + hundredths/100;
+
 
 };
 
@@ -221,7 +224,7 @@ function SwimPaceCalculator() {
     <div>
       <h1>PacePal</h1>
       <h2>Swim Pace Calculator</h2>
-      <h3>Enter Shit</h3>
+      <h3>Enter Metrics</h3>
       <div>
         <label>
           Swim Race Distance (yards):
@@ -246,7 +249,8 @@ function SwimPaceCalculator() {
         </label>
       </div>
       <button onClick={calculatePace}>Calculate Pace</button>
-      {paceResult !== null && (
+      
+      {paceResult !==null && (
   <div>
     <h4>Calculated Paces</h4>
     <p>25-Yard Split Range: {paceResult.low25Yard.toFixed(2)} - {paceResult.high25Yard.toFixed(2)} seconds </p>
@@ -257,11 +261,13 @@ function SwimPaceCalculator() {
   </div>
 )}
  <SwimPaceTable paceResult={paceResult} />
+ <h6>Designed by Natalie Klaas and Avery Dixon</h6>
     </div>
-   
+
+
   );
 
-
+  
  
 }
 
