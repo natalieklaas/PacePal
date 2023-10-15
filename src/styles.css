@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Style the body to set background color and font family */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 50px;
+    padding: 0;
+  }
+  
+  
+  /* Style the header for the main title */
+  
+h1, h2 {
+    text-align: center;
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px;
+    margin: 0; /* Add this line to remove the margin */
+  }
+  
+  h2 {
+    background-color: #007acc;
+    padding: 7px;
+    font-weight: normal;
+  }
+
+  h3,h4,h5 {
+    text-align: left; 
+    color: #000000;
+    padding: 0px;
+    font-size: 20px;
+  }
+  
+  /* Style form elements for input fields and labels */
+/* Align form elements using flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin: 10px;
+    text-align: left; /* Align labels to the right */
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  select {
+    width: 100%; /* Expand the input fields and select to the full container width */
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the "Calculate Pace" button */
+  button {
+    display: block;
+    width: 25%;
+    align: center;
+    padding: 10px;
+    background-color: #73b9e8;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00508f;
+  }
+  
+  /* Style the result display area */
+  p {
+    padding: 10px;
+    text-align: left;
+    
+  }
+  
+  /* Style the table */
+  /*table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #000000;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #007acc;
+    color: #000000;
+  }
+  */
+
+  /* Style the table */
+  /* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #a39696;
+    text-align: center;
+  }
+  
