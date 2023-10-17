@@ -1,71 +1,95 @@
 /* styles.css */
 
+
+
+
+
+
 /* Style the body to set background color and font family */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 50px;
     padding: 0;
-  }
-  
-  
-  /* Style the header for the main title */
-  
-h1, h2 {
+    }
+    /* Style the header for the main title */
+    /*
+    h1 {
     text-align: center;
     background-color: #007acc;
     color: #fff;
+    padding: 20px;
+    }
+    */
+
+
+    h1, h2 {
+        text-align: center;
+        background-color: #007acc;
+        color: #fff;
+        padding: 20px;
+        margin: 0; /* Add this line to remove the margin */
+        }
+        h2 {
+        background-color: #007acc;
+        padding: 7px;
+        font-weight: normal;
+        }
+       
+        h3,h4,h5 {
+           
+            padding: 0px;
+            font-weight: normal;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            }
+        h6 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: normal;
+        }
+    /* Style form elements for input fields and labels */
+    /*label {
+    display: block;
+    margin: 10px 0;
+    }
+    input[type="number"],
+    input[type="text"],
+    select {
+    width: 25%;
     padding: 10px;
-    margin: 0; /* Add this line to remove the margin */
-  }
-  
-  h2 {
-    background-color: #007acc;
-    padding: 7px;
-    font-weight: normal;
-  }
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    */
 
-  h3,h4,h5 {
-    text-align: left; 
-    color: #000000;
-    padding: 0px;
-    font-size: 20px;
-  }
 
-  h6{
-    text-align: center; 
-    color: #000000;
-    padding: 0px;
-    font-size: 10px;
-    font-weight: normal;
-  }
-  
-  /* Style form elements for input fields and labels */
-/* Align form elements using flexbox */
+    /* Align form elements using flexbox */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  label {
+    }
+    label {
     display: block;
-    margin: 10px;
+    margin: 10px 0;
     text-align: left; /* Align labels to the right */
-  }
-  
-  input[type="number"],
-  input[type="text"],
-  select {
+    }
+    input[type="number"],
+    input[type="text"],
+    select {
     width: 100%; /* Expand the input fields and select to the full container width */
-    padding: 5px;
+    padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  /* Style the "Calculate Pace" button */
-  button {
+    }
+   
+   
+    /* Style the "Calculate Pace" button */
+    button {
     display: block;
     width: 25%;
     align: center;
@@ -76,47 +100,38 @@ h1, h2 {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+    }
+    button:hover {
     background-color: #00508f;
-  }
-  
-  /* Style the result display area */
-  p {
+    }
+    /* Style the result display area */
+    p {
     padding: 10px;
     text-align: left;
-    
-  }
-  
-  /* Style the table */
-  /*table {
+    }
+    /* Style the table */
+    table {
+        th {
+            background-color: rgb(126, 123, 123);
+          }
+         
+          tr {
+            background-color: rgb(126, 123, 123);
+          }
+         
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  th, td {
+    }
+    th, td {
     padding: 8px;
     border: 1px solid #000000;
     text-align: center;
-  }
-  
-  th {
+    }
+    th {
     background-color: #007acc;
     color: #000000;
-  }
-  */
-
-  /* Style the table */
-  /* Style the table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 8px;
-    border: 1px solid #a39696;
-    text-align: center;
-  }
-  
+    }
+   
+    /* Set background color for table headers (th) to dark grey */
+   
+   
